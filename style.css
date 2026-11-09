@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%; /* min-height thay vì height để trang cuộn được khi nội dung dài */
+  margin: 0;
+  padding: 40px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b4f7a; /* xanh navy nhạt */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+}
+p {
+  font-size: 1.5rem;
+  margin: 12px 0 24px;
+}
+button {
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  color: #3b4f7a;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #dfe6f3;
+}
+
+/* ===== Khung Writing Task 2 ===== */
+.task2 {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 32px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #222222;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+.task2 h2 {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+  color: #3b4f7a;
+}
+.task2 .prompt {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  padding: 12px 16px;
+  background-color: #f2f5fb;
+  border-left: 4px solid #3b4f7a;
+}
+.task2 label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.task2 textarea {
+  width: 100%;
+  min-height: 300px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  border: 1px solid #c5cddc;
+  border-radius: 6px;
+  resize: vertical;
+}
+/* Bộ đếm số từ */
+.task2 .word-count {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-align: right;
+}
+.task2 .word-count.is-short {
+  color: #c0392b; /* đỏ: dưới 250 từ */
+}
+.task2 .word-count.is-enough {
+  color: #1e8449; /* xanh: đủ 250 từ */
+}
+.task2 textarea:focus {
+  outline: none;
+  border-color: #3b4f7a;
+  box-shadow: 0 0 0 3px rgba(59, 79, 122, 0.25);
+}

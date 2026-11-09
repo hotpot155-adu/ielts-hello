@@ -1,0 +1,15 @@
+# Cài đặt Claude Code riêng của máy này (quyền, đường dẫn cá nhân)
+.claude/settings.local.json
+
+# File rác do hệ điều hành tự tạo
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Cài đặt riêng của trình soạn thảo
+.vscode/
+.idea/
+
+# File log và file tạm
+*.log
+*.tmp
